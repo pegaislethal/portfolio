@@ -149,11 +149,11 @@ export default function Hero() {
 
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full border-4 border-white dark:border-slate-950 overflow-hidden shadow-2xl z-10 bg-slate-100 dark:bg-slate-900">
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop"
+              src="/profile.jpg"
               alt="Rohit Profile Headshot"
               fill
               priority
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 768px) 256px, 320px"
             />
           </div>
