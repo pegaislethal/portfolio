@@ -212,7 +212,7 @@ export const CERTIFICATIONS: Certification[] = [
   {
     title: "Django Web Development Certification",
     issuer: "IT Training Nepal",
-    date: "2025",
+    date: "2023",
   },
   {
     title: "Backend Web Development with Node.js & Express",
