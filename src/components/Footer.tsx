@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { ArrowUp, Mail } from "lucide-react";
-import { Github, Linkedin, Twitter } from "./SocialIcons";
+import { Github, Linkedin } from "./SocialIcons";
 import { PROFILE } from "@/utils/mockData";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -94,16 +94,20 @@ export default function Footer() {
             <h4 className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">Connect</h4>
             <div className="flex items-center gap-2.5">
               {[
-                { icon: <Github size={16} />, href: PROFILE.socials.github },
-                { icon: <Linkedin size={16} />, href: PROFILE.socials.linkedin },
-                { icon: <Twitter size={16} />, href: PROFILE.socials.twitter },
-                { icon: <Mail size={16} />, href: `mailto:${PROFILE.socials.email}` },
+                { icon: <Github size={16} />, href: PROFILE.socials.github, isEmail: false },
+                { icon: <Linkedin size={16} />, href: PROFILE.socials.linkedin, isEmail: false },
+                { icon: <Mail size={16} />, href: "#contact", isEmail: true },
               ].map((soc, idx) => (
                 <a
                   key={idx}
                   href={soc.href}
-                  target="_blank"
-                  rel="noreferrer"
+                  target={soc.isEmail ? undefined : "_blank"}
+                  rel={soc.isEmail ? undefined : "noreferrer"}
+                  onClick={(e) => {
+                    if (soc.isEmail) {
+                      handleLinkClick(e, soc.href);
+                    }
+                  }}
                   className="p-2.5 rounded-full bg-slate-50 hover:bg-slate-100 dark:bg-slate-900 dark:hover:bg-slate-850 text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-white border border-slate-200/50 dark:border-slate-800/50 shadow-sm transition-all duration-200"
                   aria-label="Social Link"
                 >

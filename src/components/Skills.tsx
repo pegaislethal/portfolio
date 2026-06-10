@@ -9,12 +9,17 @@ export default function Skills() {
   // Map category title/index to appropriate icon
   const getCategoryIcon = (title: string) => {
     const term = title.toLowerCase();
-    if (term.includes("frontend")) return <Code className="text-indigo-500" size={20} />;
-    if (term.includes("backend")) return <Server className="text-purple-500" size={20} />;
-    if (term.includes("database")) return <Database className="text-cyan-500" size={20} />;
-    if (term.includes("cloud")) return <Cloud className="text-emerald-500" size={20} />;
-    if (term.includes("ai")) return <Cpu className="text-rose-500" size={20} />;
+    if (term.includes("core")) return <Server className="text-indigo-500" size={20} />;
+    if (term.includes("secondary")) return <Code className="text-purple-500" size={20} />;
+    if (term.includes("foundational")) return <Cpu className="text-cyan-500" size={20} />;
     return <Terminal className="text-amber-500" size={20} />;
+  };
+
+  const getCategoryGradient = (title: string) => {
+    const term = title.toLowerCase();
+    if (term.includes("core")) return "from-indigo-500 via-indigo-600 to-purple-500";
+    if (term.includes("secondary")) return "from-purple-500 via-purple-600 to-cyan-500";
+    return "from-cyan-500 via-cyan-600 to-emerald-500";
   };
 
   return (
@@ -75,7 +80,7 @@ export default function Skills() {
                           whileInView={{ width: `${skill.level}%` }}
                           viewport={{ once: true }}
                           transition={{ duration: 1.2, ease: "easeOut" }}
-                          className="h-full bg-gradient-to-r from-indigo-500 via-indigo-600 to-purple-500 rounded-full"
+                          className={`h-full bg-gradient-to-r ${getCategoryGradient(category.title)} rounded-full`}
                         />
                       </div>
                     </div>

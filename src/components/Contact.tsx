@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Mail, MapPin, Send, CheckCircle, Sparkles, Loader2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { PROFILE } from "@/utils/mockData";
 
 interface FormState {
   name: string;
@@ -99,8 +100,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Email Address</h4>
-                    <a href="mailto:rohit.dev@example.com" className="text-sm font-bold text-slate-900 dark:text-white hover:text-indigo-500 dark:hover:text-indigo-450 transition-colors">
-                      rohit.dev@example.com
+                    <a href={`mailto:${PROFILE.socials.email}`} className="text-sm font-bold text-slate-900 dark:text-white hover:text-indigo-500 dark:hover:text-indigo-450 transition-colors">
+                      {PROFILE.socials.email}
                     </a>
                   </div>
                 </div>
@@ -112,7 +113,7 @@ export default function Contact() {
                   <div>
                     <h4 className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Primary Location</h4>
                     <p className="text-sm font-bold text-slate-900 dark:text-white">
-                      San Francisco, CA, USA
+                      Kathmandu, Nepal
                     </p>
                   </div>
                 </div>
@@ -125,7 +126,7 @@ export default function Contact() {
               <div className="absolute inset-0 opacity-15 dark:opacity-[0.06] grid-bg" />
               <div className="relative z-10 flex items-center gap-2 text-xs font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-500/10 dark:bg-indigo-500/20 px-3 py-1 rounded-full border border-indigo-500/25 self-start">
                 <Sparkles size={12} className="animate-pulse" />
-                <span>Timezone: UTC-7 (Pacific Standard Time)</span>
+                <span>Timezone: UTC+5:45 (Nepal Standard Time)</span>
               </div>
 
               <div className="relative z-10 pt-8">
@@ -134,10 +135,10 @@ export default function Contact() {
                   <div className="h-3 w-3 rounded-full bg-indigo-500 relative flex items-center justify-center">
                     <span className="absolute h-6 w-6 rounded-full bg-indigo-500/30 animate-ping" />
                   </div>
-                  <span className="text-xs font-bold text-slate-900 dark:text-white">37.7749&deg; N, 122.4194&deg; W</span>
+                  <span className="text-xs font-bold text-slate-900 dark:text-white">27.7172&deg; N, 85.3240&deg; E</span>
                 </div>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-2">
-                  Operating remotely for global clients and teams. Available for select on-site arrangements.
+                  Operating remotely for global clients and teams. Available for select local or remote arrangements.
                 </p>
               </div>
             </div>
@@ -212,7 +213,7 @@ export default function Contact() {
 
                     {/* Message input */}
                     <div className="space-y-1">
-                      <label htmlFor="message" className="text-xs font-semibold text-slate-700 dark:text-slate-300">Message</label>
+                      <label htmlFor="message" className="text-xs font-semibold text-slate-700 dark:text-slate-300">Proposal or Suggestions</label>
                       <textarea
                         id="message"
                         name="message"
@@ -222,7 +223,7 @@ export default function Contact() {
                         className={`w-full px-4 py-3 text-xs rounded-xl bg-slate-50 dark:bg-slate-900 border text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all resize-none ${
                           errors.message ? "border-rose-500 dark:border-rose-900" : "border-slate-200 dark:border-slate-800"
                         }`}
-                        placeholder="Detail your request or proposal..."
+                        placeholder="Tell me about your project, what you want to build, or drop some suggestions..."
                       />
                       {errors.message && <p className="text-[10px] font-medium text-rose-500">{errors.message}</p>}
                     </div>

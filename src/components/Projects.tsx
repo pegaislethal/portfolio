@@ -2,14 +2,14 @@
 
 import React, { useState } from "react";
 import { PROJECTS, Project } from "@/utils/mockData";
-import { Search, ExternalLink, X, Grid, Cpu, Terminal, Layers } from "lucide-react";
+import { Search, ExternalLink, X, Grid, Cpu, Terminal, Layers, Smartphone } from "lucide-react";
 import { Github } from "./SocialIcons";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [category, setCategory] = useState<"All" | "Frontend" | "Backend" | "Fullstack" | "AI/ML">("All");
+  const [category, setCategory] = useState<"All" | "Frontend" | "Backend" | "Fullstack" | "Mobile">("All");
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredProjects = PROJECTS.filter((project) => {
@@ -27,8 +27,8 @@ export default function Projects() {
         return <Layers size={14} />;
       case "Backend":
         return <Terminal size={14} />;
-      case "AI/ML":
-        return <Cpu size={14} />;
+      case "Mobile":
+        return <Smartphone size={14} />;
       default:
         return <Grid size={14} />;
     }
@@ -55,7 +55,7 @@ export default function Projects() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
           {/* Categories */}
           <div className="flex flex-wrap items-center justify-center gap-1.5 order-2 md:order-1">
-            {(["All", "Fullstack", "Frontend", "Backend", "AI/ML"] as const).map((cat) => {
+            {(["All", "Fullstack", "Frontend", "Backend", "Mobile"] as const).map((cat) => {
               const isActive = category === cat;
               return (
                 <button

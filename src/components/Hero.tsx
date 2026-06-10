@@ -3,14 +3,15 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, ArrowDown, FileText, Download } from "lucide-react";
-import { Github, Linkedin, Twitter } from "./SocialIcons";
+import { Github, Linkedin } from "./SocialIcons";
+import { PROFILE } from "@/utils/mockData";
 import Image from "next/image";
 
 const TYPING_ROLES = [
-  "Full-Stack Software Engineer",
-  "Cloud Solutions Architect",
-  "Generative AI Engineer",
-  "UI/UX Design Enthusiast",
+  "Backend-Focused Full-Stack Developer",
+  "Node.js & Python Developer",
+  "Software Engineer",
+  "Django Backend Developer",
 ];
 
 export default function Hero() {
@@ -77,7 +78,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-none">
-            Hi, I&apos;m <span className="gradient-text font-black">Rohit</span>
+            Hi, I&apos;m <span className="gradient-text font-black">{PROFILE.name}</span>
           </h1>
 
           <div className="h-8 text-xl sm:text-2xl font-bold text-slate-700 dark:text-slate-300">
@@ -93,16 +94,21 @@ export default function Hero() {
           {/* Social quicklinks */}
           <div className="flex items-center justify-center md:justify-start gap-4">
             {[
-              { icon: <Github size={20} />, href: "https://github.com" },
-              { icon: <Linkedin size={20} />, href: "https://linkedin.com" },
-              { icon: <Twitter size={20} />, href: "https://twitter.com" },
-              { icon: <Mail size={20} />, href: "mailto:rohit.dev@example.com" },
+              { icon: <Github size={20} />, href: PROFILE.socials.github, isEmail: false },
+              { icon: <Linkedin size={20} />, href: PROFILE.socials.linkedin, isEmail: false },
+              { icon: <Mail size={20} />, href: "#contact", isEmail: true },
             ].map((soc, idx) => (
               <a
                 key={idx}
                 href={soc.href}
-                target="_blank"
-                rel="noreferrer"
+                target={soc.isEmail ? undefined : "_blank"}
+                rel={soc.isEmail ? undefined : "noreferrer"}
+                onClick={(e) => {
+                  if (soc.isEmail) {
+                    e.preventDefault();
+                    scrollToSection("contact");
+                  }
+                }}
                 className="p-3 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-white hover:scale-110 shadow-sm transition-all duration-300"
               >
                 {soc.icon}

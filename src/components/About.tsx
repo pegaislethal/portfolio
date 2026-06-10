@@ -2,29 +2,29 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { PROFILE } from "@/utils/mockData";
+import { PROFILE, EDUCATION } from "@/utils/mockData";
 import { Award, Briefcase, GraduationCap, Heart, CheckCircle2 } from "lucide-react";
 
 export default function About() {
   const stats = [
-    { label: "Years of Experience", value: `${PROFILE.experienceYears}+`, desc: "In full-stack roles", color: "indigo" },
-    { label: "Projects Completed", value: `${PROFILE.projectsCount}+`, desc: "Deployed apps", color: "purple" },
-    { label: "Technologies Used", value: `${PROFILE.technologiesCount}+`, desc: "Dev tools & systems", color: "cyan" },
-    { label: "Certifications", value: `${PROFILE.certificationsCount}+`, desc: "Cloud & Dev credentials", color: "emerald" },
+    { label: "Years of Experience", value: `${PROFILE.experienceYears}+ Years`, desc: "In backend & full-stack roles", color: "indigo" },
+    { label: "Projects Completed", value: `${PROFILE.projectsCount}+ Projects`, desc: "Constructed & deployed apps", color: "purple" },
+    { label: "Technologies Used", value: `${PROFILE.technologiesCount}+`, desc: "Dev tools & frameworks", color: "cyan" },
+    { label: "Certifications", value: `${PROFILE.certificationsCount}+ Certifications`, desc: "Including Django credentials", color: "emerald" },
   ];
 
   const strengths = [
-    "High-Performance System Architecture",
-    "Tailwind-First UI & Micro-interactions",
-    "Agile Leadership & Collaborative Strategy",
-    "End-to-End DevOps Pipelines",
+    "Robust API & Backend Architecture",
+    "Database Modeling & Query Optimization",
+    "Clean, Maintainable Code Design",
+    "Competent Full-Stack Delivery",
   ];
 
   const interests = [
-    "Generative AI & LLMs",
-    "Distributed DBs & Caching",
+    "Distributed Systems & Caching",
+    "Database Design & SQL Optimization",
+    "AI & Machine Learning Basics",
     "UI/UX Design Systems",
-    "Technical Writing",
   ];
 
   return (
@@ -53,15 +53,11 @@ export default function About() {
             </h3>
 
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-              I am a results-oriented Full-Stack Developer with a deep interest in software engineering craftsmanship. 
-              My focus lies in building scalable, responsive, and secure web applications that offer exceptional user experiences. 
-              I design system services, configure resilient database storage structures, and create modern responsive user interfaces.
+              I am a backend-focused Full-Stack Developer based in Kathmandu, Nepal. My core expertise lies in designing robust backend structures, constructing efficient APIs, and managing databases, while maintaining competent full-stack delivery capabilities.
             </p>
 
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-              My engineering philosophy revolves around simplicity, performance, and attention to detail. 
-              Whether optimizing database queries in PostgreSQL, orchestrating API gateways, or implementing interactive 
-              animations in React, I strive to achieve clean code and optimal metrics.
+              My engineering philosophy revolves around simplicity, performance, and attention to detail. Whether optimizing database queries in PostgreSQL, writing backend servers in Django or Node.js, or implementing interactive client-side interfaces in React, I strive to achieve clean code and optimal metrics.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
@@ -104,21 +100,25 @@ export default function About() {
                 <GraduationCap size={20} className="text-indigo-500" />
                 <span>Education</span>
               </h3>
-              <div className="p-5 rounded-2xl glass-card relative overflow-hidden">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
-                  <h4 className="font-bold text-slate-900 dark:text-white text-base">
-                    B.S. in Computer Science & Engineering
-                  </h4>
-                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400">
-                    2017 - 2021
-                  </span>
-                </div>
-                <p className="text-sm font-medium text-indigo-600 dark:text-indigo-400 mb-2">
-                  Global Institute of Technology
-                </p>
-                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                  Graduated with Honors (GPA 3.85/4.0). Special interest in Advanced Data Structures, Cloud Architecture, and Software Engineering methodologies.
-                </p>
+              <div className="space-y-4">
+                {EDUCATION.map((edu, idx) => (
+                  <div key={idx} className="p-5 rounded-2xl glass-card relative overflow-hidden">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
+                      <h4 className="font-bold text-slate-900 dark:text-white text-base">
+                        {edu.degree}
+                      </h4>
+                      <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400">
+                        {edu.period}
+                      </span>
+                    </div>
+                    <p className="text-sm font-medium text-indigo-600 dark:text-indigo-400 mb-2">
+                      {edu.school}
+                    </p>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                      {edu.details}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
