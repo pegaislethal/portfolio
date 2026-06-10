@@ -137,11 +137,12 @@ export default function Navbar() {
 
             {/* Resume Callout Quick Link */}
             <a
-              href="#resume"
-              onClick={(e) => handleNavClick(e, "#resume")}
-              className="hidden sm:inline-flex px-4 py-2 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold tracking-wider uppercase shadow-md shadow-indigo-600/20 hover:shadow-indigo-600/40 transition-all duration-300"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold tracking-wider uppercase shadow-lg shadow-blue-600/20 hover:shadow-blue-600/40 hover:scale-[1.05] transition-all duration-300"
             >
-              Resume
+              View Resume
             </a>
 
             {/* Mobile Hamburger */}
@@ -210,9 +211,10 @@ export default function Navbar() {
 
               <div className="flex flex-col gap-3">
                 <a
-                  href="#resume"
-                  onClick={(e) => handleNavClick(e, "#resume")}
-                  className="w-full text-center py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold transition-colors"
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold transition-all duration-200"
                 >
                   View Resume
                 </a>

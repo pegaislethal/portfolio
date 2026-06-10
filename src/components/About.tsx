@@ -53,11 +53,11 @@ export default function About() {
             </h3>
 
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-              I am a backend-focused Full-Stack Developer based in Kathmandu, Nepal. My core expertise lies in designing robust backend structures, constructing efficient APIs, and managing databases, while maintaining competent full-stack delivery capabilities.
+              I am a backend-focused Software Engineer based in Kathmandu, Nepal. My core focus lies in designing robust server-side logic, constructing efficient APIs, and managing database operations, while maintaining foundational capabilities in frontend, mobile, and AI.
             </p>
 
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-              My engineering philosophy revolves around simplicity, performance, and attention to detail. Whether optimizing database queries in PostgreSQL, writing backend servers in Django or Node.js, or implementing interactive client-side interfaces in React, I strive to achieve clean code and optimal metrics.
+              I am largely self-taught in advanced backend architectures, building my engineering foundations through dedicated learning paths on platforms like YouTube and diving deep into hands-on database builds. I originally did foundational web development work in Django 3.5 years ago. Since then, I have specialized in building robust and scalable servers using Node.js and Express.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">

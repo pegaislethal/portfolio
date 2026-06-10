@@ -125,20 +125,11 @@ export default function Hero() {
               View Projects
             </button>
             <button
-              onClick={() => scrollToSection("resume")}
-              className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-800 font-medium inline-flex items-center justify-center gap-2 shadow-sm transition-all duration-300"
+              onClick={() => scrollToSection("contact")}
+              className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-800 font-medium inline-flex items-center justify-center gap-2 shadow-sm transition-all duration-300"
             >
-              <FileText size={16} />
-              <span>View Resume</span>
+              <span>Contact Me</span>
             </button>
-            <a
-              href="/resume.pdf"
-              download
-              className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-slate-950 dark:bg-slate-100 hover:bg-slate-900 dark:hover:bg-white text-white dark:text-slate-900 font-medium inline-flex items-center justify-center gap-2 shadow-sm transition-all duration-300"
-            >
-              <Download size={16} />
-              <span>Download CV</span>
-            </a>
           </div>
         </motion.div>
 
