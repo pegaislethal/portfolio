@@ -175,9 +175,9 @@ export default function ResumeViewer() {
             {/* Quick credentials cards */}
             <div className="space-y-4">
               {[
-                { label: "Core Competency", val: "Full-Stack System Engineering", desc: "Front-end UX + Backend distributed microservices Architecture." },
-                { label: "Total Techs Used", val: "18+ Technologies", desc: "Next.js, TypeScript, Node.js, Go, Python, AWS, Docker." },
-                { label: "Production Projects", val: "24+ Applications", desc: "E-Commerce engines, Real-time charts, AI prompted LLM workspaces." },
+                { label: "Core Competency", val: "Backend Systems Engineering", desc: "Server logic, robust API services, database structures, and SQL optimization." },
+                { label: "Total Techs Used", val: "12+ Technologies", desc: "Node.js, Express, MongoDB, JavaScript, Python, SQL, React, React Native, Git." },
+                { label: "Completed Projects", val: "10+ Projects", desc: "MedTrack logistics, Finance Fusion secure transactional API, and utility mobile apps." },
               ].map((item, idx) => (
                 <div key={idx} className="p-5 rounded-2xl glass-card border border-slate-100 dark:border-slate-900 flex items-start gap-3.5">
                   <CheckCircle2 className="text-emerald-500 flex-shrink-0 mt-0.5" size={18} />
@@ -316,8 +316,8 @@ export default function ResumeViewer() {
                       </p>
                       <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-slate-500 dark:text-slate-400 mt-2 font-medium">
                         <span>Email: {PROFILE.socials.email}</span>
-                        <span>Github: github.com/rohit</span>
-                        <span>LinkedIn: linkedin.com/in/rohit</span>
+                        <span>Github: github.com/pegaislethal</span>
+                        <span>LinkedIn: linkedin.com/in/rohit-ghimire-abb71222b/</span>
                       </div>
                     </div>
 
@@ -326,9 +326,10 @@ export default function ResumeViewer() {
                       <h5 className="text-xs font-bold text-slate-950 dark:text-white uppercase tracking-wider border-l-2 border-indigo-500 pl-2">
                         Summary
                       </h5>
-                      <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                        Highly skilled Full-Stack Developer with 6+ years of expertise designing and managing modern cloud services, 
-                        database networks, microservice architectures, and fluid client-side dashboard panels. Focused on high-performance metrics.
+                      <p className="text-xs text-slate-650 dark:text-slate-400 leading-relaxed">
+                        Backend-focused Software Engineer specializing in designing robust server-side logic, architecting clean REST APIs, 
+                        and optimizing database schemas. Highly motivated self-taught engineer with extensive hands-on project builds and 
+                        foundational Django training dating back 3.5 years.
                       </p>
                     </div>
 
@@ -340,20 +341,20 @@ export default function ResumeViewer() {
                       <div className="space-y-3.5">
                         <div className="space-y-1">
                           <div className="flex justify-between items-center text-xs font-bold text-slate-900 dark:text-white">
-                            <span>Senior Full-Stack Architect @ Nova Technologies</span>
-                            <span className="text-[10px] text-slate-400">2023 - Pres</span>
+                            <span>Mobile Application Developer Intern @ Placement Nepal</span>
+                            <span className="text-[10px] text-slate-400">2024 (2-3 Mos)</span>
                           </div>
                           <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
-                            Lead engineer on core distributed services. Re-designed the React dashboards to Next.js 15, lowering startup latency by 42%. Built billing gateways using Go and Redis.
+                            Learned and utilized React Native to develop utility apps. Collaborated with a cross-functional team to successfully build and ship the 'Torchlight' and 'Wallpaper' apps under tight deadlines.
                           </p>
                         </div>
                         <div className="space-y-1">
                           <div className="flex justify-between items-center text-xs font-bold text-slate-900 dark:text-white">
-                            <span>Full-Stack Engineer @ Apex Ledger Corp</span>
-                            <span className="text-[10px] text-slate-400">2021 - 2023</span>
+                            <span>Backend Developer Learner Intern @ Development Platform</span>
+                            <span className="text-[10px] text-slate-400">2024</span>
                           </div>
                           <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
-                            Created real-time financial tracking widgets. Optimized backend queries in Node.js/Postgres, boosting analytics lookup times by 30%.
+                            Focused on backend engineering, server-side logic, and handling database operations for student-body services.
                           </p>
                         </div>
                       </div>
@@ -365,7 +366,7 @@ export default function ResumeViewer() {
                         Technical Expertise
                       </h5>
                       <div className="flex flex-wrap gap-1">
-                        {["Next.js", "TypeScript", "Node.js", "Go", "FastAPI", "Postgres", "AWS", "Docker", "Stripe", "Framer Motion"].map((sk) => (
+                        {["Node.js", "Express", "MongoDB", "JavaScript", "Python", "SQL", "React", "React Native", "HTML", "CSS", "PHP", "Git", "Django"].map((sk) => (
                           <span key={sk} className="text-[9px] font-bold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400">
                             {sk}
                           </span>

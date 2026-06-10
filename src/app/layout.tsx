@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rohit | Premium Full-Stack Developer & AI Engineer Portfolio",
+  title: "Portfolio",
   description:
     "Explore the interactive portfolio of Rohit, a Full-Stack Software Engineer specializing in craft-centered web applications, distributed systems, cloud design, and AI models.",
   keywords: [
