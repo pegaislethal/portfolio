@@ -269,7 +269,7 @@ export default function Projects() {
                         className="px-5 py-2.5 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold flex items-center gap-2 shadow-md shadow-indigo-600/10 hover:scale-[1.03] transition-all duration-200"
                       >
                         <ExternalLink size={14} />
-                        <span>Live Demo</span>
+                        <span>Visit Website</span>
                       </a>
                     )}
                     {selectedProject.githubUrl && (

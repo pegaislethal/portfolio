@@ -139,6 +139,7 @@ export const PROJECTS: Project[] = [
     description: "A healthcare supply tracking and logistics tool designed to monitor inventory. It features automated alerts and email dispatch templates to notify users of low stock and supplies approaching expiration.",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
     tech: ["React", "Node.js", "Express", "MongoDB"],
+    liveUrl: "https://medtrack-v2-qgao-pmhnw3zer-pegas-projects-be8fc807.vercel.app/",
     githubUrl: "https://github.com/pegaislethal/medtrack",
     features: [
       "Automated alerts and email notifications for supply thresholds",
