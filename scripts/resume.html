@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rohit Ghimire – Resume</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10.5pt;
+    color: #1e293b;
+    background: #fff;
+    padding: 36px 44px;
+    line-height: 1.5;
+  }
+
+  /* ── Header ── */
+  .header { border-bottom: 2px solid #4f46e5; padding-bottom: 14px; margin-bottom: 18px; }
+  .header h1 { font-size: 22pt; font-weight: 800; letter-spacing: -0.5px; color: #0f172a; }
+  .header .title { font-size: 9.5pt; font-weight: 700; color: #4f46e5; text-transform: uppercase; letter-spacing: 1px; margin-top: 3px; }
+  .header .contacts { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 7px; font-size: 8.5pt; color: #64748b; font-weight: 500; }
+
+  /* ── Section ── */
+  .section { margin-bottom: 16px; }
+  .section-title {
+    font-size: 8pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #0f172a;
+    border-left: 3px solid #4f46e5;
+    padding-left: 7px;
+    margin-bottom: 9px;
+  }
+
+  /* ── Summary ── */
+  .summary { font-size: 9.5pt; color: #475569; line-height: 1.6; }
+
+  /* ── Entry (Experience / Education) ── */
+  .entry { margin-bottom: 10px; }
+  .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .entry-role { font-size: 9.5pt; font-weight: 700; color: #0f172a; }
+  .entry-period { font-size: 8pt; color: #94a3b8; font-weight: 500; }
+  .entry-company { font-size: 8.5pt; color: #4f46e5; font-weight: 600; margin-top: 1px; }
+  .entry-desc { font-size: 8.5pt; color: #64748b; margin-top: 4px; line-height: 1.55; }
+  .entry-bullets { list-style: disc; margin-left: 15px; margin-top: 4px; }
+  .entry-bullets li { font-size: 8.5pt; color: #64748b; margin-bottom: 2px; line-height: 1.5; }
+
+  /* ── Skills ── */
+  .skills-grid { display: flex; flex-direction: column; gap: 6px; }
+  .skill-row { display: flex; gap: 8px; align-items: flex-start; }
+  .skill-category-label { font-size: 8pt; font-weight: 700; color: #334155; min-width: 155px; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .skill-tag {
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 1.5px 7px;
+    border-radius: 4px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    color: #475569;
+  }
+
+  /* ── Certifications ── */
+  .cert-entry { margin-bottom: 7px; }
+  .cert-title { font-size: 9pt; font-weight: 700; color: #0f172a; }
+  .cert-meta { font-size: 8pt; color: #64748b; margin-top: 1px; }
+
+  /* ── Projects ── */
+  .project-entry { margin-bottom: 10px; }
+  .project-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .project-name { font-size: 9.5pt; font-weight: 700; color: #0f172a; }
+  .project-category { font-size: 7.5pt; color: #4f46e5; font-weight: 600; }
+  .project-tech { font-size: 7.5pt; color: #94a3b8; margin-top: 2px; }
+  .project-desc { font-size: 8.5pt; color: #64748b; margin-top: 3px; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<div class="header">
+  <h1>Rohit Ghimire</h1>
+  <p class="title">Backend-Focused Software Engineer</p>
+  <div class="contacts">
+    <span>ghimirerohit21@gmail.com</span>
+    <span>github.com/pegaislethal</span>
+    <span>linkedin.com/in/rohit-ghimire-abb71222b/</span>
+  </div>
+</div>
+
+<!-- ══ SUMMARY ══ -->
+<div class="section">
+  <p class="section-title">Summary</p>
+  <p class="summary">
+    Backend-focused Software Engineer specializing in designing robust server-side logic, architecting clean REST APIs,
+    and optimizing database schemas. Highly motivated self-taught engineer with extensive hands-on project builds and
+    foundational Django training dating back 3.5 years. Experienced with the full MERN stack and mobile development.
+  </p>
+</div>
+
+<!-- ══ EXPERIENCE ══ -->
+<div class="section">
+  <p class="section-title">Experience</p>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-role">Mobile Application Developer Intern</span>
+      <span class="entry-period">2024 (2–3 Months)</span>
+    </div>
+    <p class="entry-company">Placement Nepal</p>
+    <ul class="entry-bullets">
+      <li>Collaborated with a team to successfully build and ship the 'Torchlight' and 'Wallpaper' utility apps.</li>
+      <li>Optimized mobile layout performance and verified asset caching mechanisms.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-role">Backend Developer Learner Intern</span>
+      <span class="entry-period">2024</span>
+    </div>
+    <p class="entry-company">Development Platform (College Bodies)</p>
+    <ul class="entry-bullets">
+      <li>Designed server routers and handled database CRUD connections.</li>
+      <li>Learned server scalability principles and structured API requests and responses.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══ EDUCATION ══ -->
+<div class="section">
+  <p class="section-title">Education</p>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-role">B.Sc. (Hons) in Computer Science</span>
+      <span class="entry-period">2023 – 2026</span>
+    </div>
+    <p class="entry-company">Herald College Kathmandu</p>
+    <p class="entry-desc">Focusing on software development patterns, system administration, and distributed database designs.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <span class="entry-role">+2 Science</span>
+      <span class="entry-period">2021 – 2023</span>
+    </div>
+    <p class="entry-company">DAV College</p>
+    <p class="entry-desc">Specialized in Computer Science and physics fundamentals.</p>
+  </div>
+</div>
+
+<!-- ══ PROJECTS ══ -->
+<div class="section">
+  <p class="section-title">Key Projects</p>
+
+  <div class="project-entry">
+    <div class="project-header">
+      <span class="project-name">MedTrack</span>
+      <span class="project-category">Fullstack</span>
+    </div>
+    <p class="project-tech">React · Node.js · Express · MongoDB</p>
+    <p class="project-desc">Healthcare supply tracking with automated alerts, email dispatch, role-based auth, and a responsive inventory dashboard.</p>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-header">
+      <span class="project-name">Finance Fusion</span>
+      <span class="project-category">Fullstack</span>
+    </div>
+    <p class="project-tech">React · Node.js · Express · MongoDB</p>
+    <p class="project-desc">Secure transactional platform with backend routing guards, MongoDB indexed logging, and dynamic MERN dashboard charts.</p>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-header">
+      <span class="project-name">Weather App</span>
+      <span class="project-category">Frontend</span>
+    </div>
+    <p class="project-tech">HTML · CSS · JavaScript · PHP</p>
+    <p class="project-desc">Lightweight real-time weather widget with third-party API fetches and PHP query processing.</p>
+  </div>
+
+  <div class="project-entry">
+    <div class="project-header">
+      <span class="project-name">Torchlight & Wallpaper App</span>
+      <span class="project-category">Mobile</span>
+    </div>
+    <p class="project-tech">React Native</p>
+    <p class="project-desc">Utility mobile apps built during internship — flash sensor hooks, battery-aware sleep mode, and dynamic wallpaper delivery with native image caching.</p>
+  </div>
+</div>
+
+<!-- ══ SKILLS ══ -->
+<div class="section">
+  <p class="section-title">Technical Skills</p>
+  <div class="skills-grid">
+    <div class="skill-row">
+      <span class="skill-category-label">Core (Strong Proficiency)</span>
+      <div class="skill-tags">
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Express</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Python</span>
+      </div>
+    </div>
+    <div class="skill-row">
+      <span class="skill-category-label">Moderate Proficiency</span>
+      <div class="skill-tags">
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">React Native</span>
+      </div>
+    </div>
+    <div class="skill-row">
+      <span class="skill-category-label">Foundational Knowledge</span>
+      <div class="skill-tags">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Django</span>
+        <span class="skill-tag">AI/ML Basics</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CERTIFICATIONS ══ -->
+<div class="section">
+  <p class="section-title">Certifications</p>
+
+  <div class="cert-entry">
+    <p class="cert-title">Backend Web Development with Node.js &amp; Express</p>
+    <p class="cert-meta">IT Academy Nepal · 2024</p>
+  </div>
+
+  <div class="cert-entry">
+    <p class="cert-title">Django Web Development Certification</p>
+    <p class="cert-meta">IT Training Nepal · 2023</p>
+  </div>
+</div>
+
+</body>
+</html>

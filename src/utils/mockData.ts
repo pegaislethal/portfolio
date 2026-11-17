@@ -226,7 +226,7 @@ export const EDUCATION: Education[] = [
   {
     degree: "B.Sc. (Hons) in Computer Science",
     school: "Herald College Kathmandu",
-    period: "2023 - Present",
+    period: "2023 - 2026",
     details: "Currently studying. Focusing on software development patterns, system administration, and distributed database designs.",
   },
   {

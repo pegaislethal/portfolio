@@ -360,6 +360,29 @@ export default function ResumeViewer() {
                       </div>
                     </div>
 
+                    {/* Education */}
+                    <div className="space-y-2.5">
+                      <h5 className="text-xs font-bold text-slate-950 dark:text-white uppercase tracking-wider border-l-2 border-indigo-500 pl-2">
+                        Education
+                      </h5>
+                      <div className="space-y-2">
+                        <div className="space-y-0.5">
+                          <div className="flex justify-between items-center text-xs font-bold text-slate-900 dark:text-white">
+                            <span>B.Sc. (Hons) in Computer Science</span>
+                            <span className="text-[10px] text-slate-400">2023 – 2026</span>
+                          </div>
+                          <p className="text-[11px] text-slate-500 dark:text-slate-400">Herald College Kathmandu</p>
+                        </div>
+                        <div className="space-y-0.5">
+                          <div className="flex justify-between items-center text-xs font-bold text-slate-900 dark:text-white">
+                            <span>+2 Science</span>
+                            <span className="text-[10px] text-slate-400">2021 – 2023</span>
+                          </div>
+                          <p className="text-[11px] text-slate-500 dark:text-slate-400">DAV College</p>
+                        </div>
+                      </div>
+                    </div>
+
                     {/* Skills */}
                     <div className="space-y-2.5">
                       <h5 className="text-xs font-bold text-slate-950 dark:text-white uppercase tracking-wider border-l-2 border-indigo-500 pl-2">
